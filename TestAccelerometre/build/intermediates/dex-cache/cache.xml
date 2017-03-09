@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act1/TestAccelerometre/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/libs/internal_impl-21.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act1/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_9706bb0e27743e6280b2749b81e717db0ce7beb3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act1/TestAccelerometre/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="714d1a79deaf56e8bd75def50a720f18ae5f5a3d">
+        <dex dex="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act1/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_675915f09929afb7ce6061b4562021b8812e0317/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xavi/.android/build-cache/455f34b3c8be08c2e9c39e82fc08674915322d58/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8ef86d04bb9f03d182b8c6d4d8937c6aa67bec87/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act1/TestAccelerometre/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a96722b97b2196275ab28e12ed31653a26af53c4">
+        <dex dex="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act1/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b31ec8f4a915c2874f20b2509095872d5ed4af6b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xavi/.android/build-cache/455f34b3c8be08c2e9c39e82fc08674915322d58/output/jars/libs/internal_impl-21.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_d52ccc7081e8c32dedf539e5473d5c2003ebb2e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xavi/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act1/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_de792c449eba016434c65914083633cf431d2e40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xavi/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_de792c449eba016434c65914083633cf431d2e40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b5b0c52d0cbe13997881ea69505ebb154e8835a9">
+        <dex dex="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e0f689c83d3dffcff7ad89769f6b4a0d78553458/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2e423ceefadb0f4db9a8ece35f9aafeddf997862/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act1/TestAccelerometre/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act1/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-21.0.0_8df0b50885d29ef779cde9b010e66587edc3ca66/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestAccel</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="shake">Shake to get a toast and to switch color</string>
+    <string name="shuffed">Device was shuffed</string>
+    <string name="noAccelerometer">Sorry, there is no accelerometer</string>
+    <string name="sensorLigthYES">Light sensor available.</string>
+    <string name="sensorLigthNO">Sorry, there is no light sensor</string>
+    <string name="newValueLight">New value light sensor = </string>
+    <string name="intensity">Intensity</string>
+    <string name="maxRange">Maximum Range: </string>
+    <string name="notconnected">Not connected</string>
+    <string name="wificonnected">Wifi connected !</string>
+    <string name="mobileconnected">Mobile connected !</string>
+    <string name="noconnection">No network operating !!</string>
+    <string name="refresh">Refresh</string>
+
+
+</resources>

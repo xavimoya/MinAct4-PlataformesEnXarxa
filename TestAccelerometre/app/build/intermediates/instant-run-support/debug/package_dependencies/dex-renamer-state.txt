@@ -1,0 +1,10 @@
+#Tue Mar 07 18:07:14 CET 2017
+renamed.2=classes2.dex
+renamed.1=classes3.dex
+renamed.0=classes.dex
+base.2=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_d52ccc7081e8c32dedf539e5473d5c2003ebb2e8
+base.1=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_de792c449eba016434c65914083633cf431d2e40
+base.0=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8ef86d04bb9f03d182b8c6d4d8937c6aa67bec87
+file.2=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_d52ccc7081e8c32dedf539e5473d5c2003ebb2e8/classes.dex
+file.1=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_de792c449eba016434c65914083633cf431d2e40/classes.dex
+file.0=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8ef86d04bb9f03d182b8c6d4d8937c6aa67bec87/classes.dex

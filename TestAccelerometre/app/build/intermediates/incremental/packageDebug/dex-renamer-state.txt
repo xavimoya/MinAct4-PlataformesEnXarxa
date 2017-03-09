@@ -1,0 +1,7 @@
+#Tue Mar 07 19:00:10 CET 2017
+base.0=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e0f689c83d3dffcff7ad89769f6b4a0d78553458
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2e423ceefadb0f4db9a8ece35f9aafeddf997862/classes.dex
+base.1=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2e423ceefadb0f4db9a8ece35f9aafeddf997862
+file.0=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e0f689c83d3dffcff7ad89769f6b4a0d78553458/classes.dex

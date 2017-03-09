@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">minAct4Downloads</string>
+    <string name="downloadurl">Download Web Page</string>
+    <string name="downloadimg">Download Image</string>
+    <string name="wificonnected">Wifi connected !</string>
+    <string name="mobileconnected">Mobile connected !</string>
+    <string name="noconnection">No network operating !!</string>
+</resources>

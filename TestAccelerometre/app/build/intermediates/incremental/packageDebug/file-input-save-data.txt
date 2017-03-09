@@ -1,0 +1,27 @@
+#Internal package file, do not edit.
+#Tue Mar 07 19:00:10 CET 2017
+2.base=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_
+5.file=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_/res/menu/test_accelerometre.xml
+5.set=ANDROID_RESOURCE
+3.base=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_
+6.file=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_/res/menu-v11/test_accelerometre.xml
+2.set=ANDROID_RESOURCE
+4.base=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e0f689c83d3dffcff7ad89769f6b4a0d78553458
+7.file=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+7.set=ANDROID_RESOURCE
+count=8
+0.file=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2e423ceefadb0f4db9a8ece35f9aafeddf997862/classes.dex
+5.base=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_
+4.set=DEX
+6.base=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_
+1.file=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_launcher.png
+1.set=ANDROID_RESOURCE
+7.base=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_
+2.file=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+6.set=ANDROID_RESOURCE
+0.base=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2e423ceefadb0f4db9a8ece35f9aafeddf997862
+3.file=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_/res/layout/main.xml
+3.set=ANDROID_RESOURCE
+1.base=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/res/resources-debug.ap_
+4.file=/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e0f689c83d3dffcff7ad89769f6b4a0d78553458/classes.dex
+0.set=DEX
