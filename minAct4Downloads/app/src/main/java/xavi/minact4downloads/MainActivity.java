@@ -1,6 +1,9 @@
 package xavi.minact4downloads;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.ConnectivityManager;
@@ -24,16 +27,21 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private final String myWebPage = "http://www.udl.es/ca/";
     private final String myImage = "http://www.mayoff.com/5-01cablecarDCP01934.jpg";
     Toast toast;
+    private NetworkReceiver receiver = new NetworkReceiver();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        IntentFilter filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        receiver = new NetworkReceiver();
+        this.registerReceiver(receiver, filter);
 
         Button downIMG = (Button) findViewById(R.id.buttonDownloadImage);
         Button downURL = (Button) findViewById(R.id.buttonDownloadURL);
@@ -43,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.buttonDownloadImage:
                 downloadImage();
                 break;
@@ -53,17 +61,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private void downloadURL(){
+    private void downloadURL() {
         DownURL du = new DownURL();
         du.execute();
     }
 
-    private void downloadImage(){
+    private void downloadImage() {
         DownloadIMG Dimg = new DownloadIMG();
         Dimg.execute();
 
     }
-
 
 
     @Override
@@ -73,40 +80,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     @Override
-    protected void onResume(){
+    protected void onResume() {
         super.onResume();
         netinfo ni = new netinfo();
         ni.execute();
     }
 
     @Override
-    protected void onStart(){
+    protected void onStart() {
         super.onStart();
         netinfo ni = new netinfo();
         ni.execute();
     }
 
     @Override
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
     }
 
 
-
-    private class netinfo extends AsyncTask<String,Void,String> {
+    private class netinfo extends AsyncTask<String, Void, String> {
 
         @Override
         protected String doInBackground(String... strings) {
             ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-            String result="";
-            if (networkInfo != null && networkInfo.isConnected()){
+            String result = "";
+            if (networkInfo != null && networkInfo.isConnected()) {
                 boolean wifiok = networkInfo.getType() == ConnectivityManager.TYPE_WIFI;
                 boolean mobileok = networkInfo.getType() == ConnectivityManager.TYPE_MOBILE;
                 if (wifiok) result = getString(R.string.wificonnected);
                 else if (mobileok) result = getString(R.string.mobileconnected);
-            }
-            else result = getString(R.string.noconnection);
+            } else result = getString(R.string.noconnection);
             return result;
         }
 
@@ -116,67 +121,65 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private class DownloadIMG extends AsyncTask<String,Void,Bitmap>{
+    private class DownloadIMG extends AsyncTask<String, Void, Bitmap> {
 
         @Override
         protected Bitmap doInBackground(String... params) {
-            return  DownloadImageFromPath(myImage);
+            return DownloadImageFromPath(myImage);
 
         }
 
-        public Bitmap DownloadImageFromPath(String path){
-            InputStream in =null;
-            Bitmap bmp=null;
+        public Bitmap DownloadImageFromPath(String path) {
+            InputStream in = null;
+            Bitmap bmp = null;
             int responseCode = -1;
-            try{
+            try {
 
                 URL url = new URL(path);
-                HttpURLConnection con = (HttpURLConnection)url.openConnection();
+                HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.setDoInput(true);
                 con.connect();
                 responseCode = con.getResponseCode();
-                if(responseCode == HttpURLConnection.HTTP_OK)
-                {
+                if (responseCode == HttpURLConnection.HTTP_OK) {
                     //download
                     in = con.getInputStream();
                     bmp = BitmapFactory.decodeStream(in);
                     in.close();
                 }
 
-            }
-            catch(Exception ex){
-                Log.e("Exception",ex.toString());
+            } catch (Exception ex) {
+                Log.e("Exception", ex.toString());
             }
             return bmp;
         }
 
         @Override
-        public void onPostExecute(Bitmap result){
-            ImageView iv = (ImageView)findViewById(R.id.image1);
+        public void onPostExecute(Bitmap result) {
+            ImageView iv = (ImageView) findViewById(R.id.image1);
             iv.setImageBitmap(result);
 
 
         }
     }
 
-    private class DownURL extends AsyncTask<String,Void,String>{
+    private class DownURL extends AsyncTask<String, Void, String> {
 
         @Override
-        protected String doInBackground(String... params){
+        protected String doInBackground(String... params) {
             return downurl(myWebPage);
         }
 
 
-        private String downurl(String webpage){
+        private String downurl(String webpage) {
 
             InputStream is = null;
 
 
             int len = 5000;
 
-            try{
+            try {
                 URL url = new URL(webpage);
-                HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setReadTimeout(10000);
                 connection.setConnectTimeout(15000);
                 connection.setRequestMethod("GET");
@@ -188,11 +191,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 //read
                 Reader reader = null;
-                reader = new InputStreamReader(is,"UTF-8");
+                reader = new InputStreamReader(is, "UTF-8");
                 BufferedReader br = new BufferedReader(reader);
-                String content="",line="";
-                while((line = br.readLine()) != null){
-                    content = content + "\n"+line;
+                String content = "", line = "";
+                while ((line = br.readLine()) != null) {
+                    content = content + "\n" + line;
                 }
                /* char [] buff = new char[len];
                 reader.read(buff);
@@ -200,31 +203,46 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return content;
 
 
-
-
             } catch (Exception e) {
-                Log.e("Exception",e.toString());
+                Log.e("Exception", e.toString());
                 return "basura";
             } finally {
-                if(is!=null) try {
+                if (is != null) try {
                     is.close();
                 } catch (Exception e) {
-                    Log.e("Exception",e.toString());
+                    Log.e("Exception", e.toString());
                 }
             }
         }
 
         @Override
-        public void onPostExecute(String result){
-            ((TextView)findViewById(R.id.text1)).setText(result);
+        public void onPostExecute(String result) {
+            ((TextView) findViewById(R.id.text1)).setText(result);
         }
     }
 
-    private void showToast(String text){
+    private void showToast(String text) {
         if (toast != null) {
             toast.cancel();
         }
         toast = Toast.makeText(this, text, Toast.LENGTH_LONG);
         toast.show();
+    }
+
+    public class NetworkReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+            String result = "";
+            if (networkInfo != null && networkInfo.isConnected()) {
+                boolean wifiok = networkInfo.getType() == ConnectivityManager.TYPE_WIFI;
+                boolean mobileok = networkInfo.getType() == ConnectivityManager.TYPE_MOBILE;
+                if (wifiok) result = getString(R.string.wificonnected);
+                else if (mobileok) result = getString(R.string.mobileconnected);
+            } else result = getString(R.string.noconnection);
+            showToast(result);
+        }
     }
 }

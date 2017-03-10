@@ -6,13 +6,13 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1488909690063"
+    timestamp="1489156420589"
     token="-4425838621980580289"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="57" />
+        duration="97" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -29,28 +29,16 @@
 
     <build
         build-mode="FULL"
-        timestamp="1488906428141"
+        timestamp="1489156139977"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -59,10 +47,22 @@
             location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/outputs/apk/app-debug.apk"
@@ -70,15 +70,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1488909609204"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1488909690063"
+        timestamp="1489156420589"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/Xavi/udl/4rt/Plataformes/MiniAct/act4/TestAccelerometre/app/build/intermediates/split-apk/debug/slices/slice_9.apk"

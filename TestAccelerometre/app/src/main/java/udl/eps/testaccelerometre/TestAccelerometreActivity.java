@@ -1,7 +1,10 @@
 package udl.eps.testaccelerometre;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -26,7 +29,7 @@ public class TestAccelerometreActivity extends Activity {
   private boolean color = false;
   private TextView view, view2;
     private String text="";
-
+    private NetworkReceiver receiver = new NetworkReceiver();
   
 /** Called when the activity is first created. */
 
@@ -36,6 +39,10 @@ public class TestAccelerometreActivity extends Activity {
 
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main);
+      IntentFilter filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+      receiver = new NetworkReceiver();
+      this.registerReceiver(receiver, filter);
+
       view = (TextView) findViewById(R.id.textView);
       view.setBackgroundColor(Color.GREEN);
       view2 = (TextView)findViewById(R.id.textView2);
@@ -120,6 +127,33 @@ public class TestAccelerometreActivity extends Activity {
             text = result;
         }
     }
-    
-}
+
+
+    public class NetworkReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+            String result="";
+            if (networkInfo != null && networkInfo.isConnected()){
+                view.setText(networkInfo.toString());
+                boolean wifiok = networkInfo.getType() == ConnectivityManager.TYPE_WIFI;
+                boolean mobileok = networkInfo.getType() == ConnectivityManager.TYPE_MOBILE;
+                if (wifiok) result = getString(R.string.wificonnected);
+                else if (mobileok) result = getString(R.string.mobileconnected);
+            }
+            else {
+                result = getString(R.string.noconnection);
+                view.setText(R.string.notconnected);
+
+            }
+            text = result;
+            view2.append("\n"+text);
+
+
+        }
+
+        }
+    }
 
